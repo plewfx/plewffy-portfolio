@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'lg': {'max': '1024px'}
+        'lg': {'max': '900px'},
+        'md': {'max': '768px'},
       },
       colors: {
         'primary': '#000000',

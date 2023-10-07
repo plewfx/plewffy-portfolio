@@ -1,18 +1,24 @@
 import { services } from "@/constant";
 import Image from "next/image";
 
-const Service = ({ icon, title, description }) => (
+interface Service {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+const Service = (props:Service) => (
   <div className="px-[22px] pt-[62px] pb-[43px] bg-white flex flex-col items-center text-center gap-10">
     <div className="flex items-center justify-center w-[65px] h-[65px] bg-bg">
       <Image
-        src={icon}
+        src={props.icon}
         width={50}
         height={50}
-        alt={title}
+        alt={props.title}
       />
     </div>
-    <h4>{title}</h4>
-    <p className="text-lg">{description}</p>
+    <h4>{props.title}</h4>
+    <p className="text-lg">{props.description}</p>
   </div>
 )
 

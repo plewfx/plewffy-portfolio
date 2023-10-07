@@ -8,11 +8,23 @@
   }
 
   p {
-    @apply text-pars font-medium;
+    @apply text-pars;
   }
 
   h1, h2, h3, h4, h5, h6, button, a, p {
-    @apply capitalize;
+    @apply capitalize leading-[80%] font-medium;
+  }
+
+  h3 {
+    @apply text-4xl md:text-[28px];
+  }
+
+  h4 {
+    @apply text-2xl
+  }
+
+  h6.subtitle {
+    @apply text-2xl text-pars md:text-xl;
   }
 }
 

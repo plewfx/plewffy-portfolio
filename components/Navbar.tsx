@@ -12,7 +12,7 @@ const Navbar = () => {
                 <Link href={link.href}>{link.text}</Link>
               </li>
             ))}
-            <button className="text-xl font-medium py-3 px-[22px] border border-primary hover:text-white hover:bg-primary">
+            <button className="text-xl py-3 px-[22px] border border-primary hover:text-white hover:bg-primary">
               find me
             </button>
         </ul>
